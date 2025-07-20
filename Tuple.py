@@ -49,7 +49,7 @@ print(t3[-1:-4:-1])
 # you can delete whole tuple not item
 # print(t3)
 # del t3
-# print(t3)
+# print(t3) ,gives err bcoz t3 is deleted
 
  #Operation On Tuple 
  # + And *
