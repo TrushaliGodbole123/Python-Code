@@ -89,3 +89,90 @@ np.argmax(b,axis=1)
 # np.argmin
 print(a)
 print(np.argmin(a))
+
+# np.cumsum
+# numpy.cumsum() function is used when we want to compute the cumulative sum of array elements over a given axis.
+
+print(a)
+print(np.cumsum(a))
+
+#2d array
+print(np.cumsum(b,axis=1))
+
+print(np.cumsum(b))
+
+# np.cumprod ;- it return product
+print(np.cumprod(a))
+
+# np.percentile
+# numpy.percentile()function used to compute the nth percentile of the given data (array elements) along the specified axis.
+print(a)
+print(np.percentile(a,50))
+print(np.percentile(a,100))
+
+print(np.median(a))#50 percentile
+
+# np.histogram
+# Numpy has a built-in numpy.histogram() function which represents the frequency of data distribution in the graphical form.
+print(a)
+print(np.histogram(a,bins=[0,50,100]))
+
+# np.corrcoef
+# Return Pearson product-moment correlation coefficients.
+
+salary = np.array([20000,40000,25000,35000,60000])
+experience = np.array([1,3,2,4,2])
+
+print(np.corrcoef(salary,experience))
+
+### np.isin
+# np.isin
+# With the help of numpy.isin() method, we can see that one array having values are checked in a different numpy array having different elements with different sizes.
+
+items = [10,20,30,40,50,60,70,80,90,100]
+print(a)
+
+print(a[np.isin(a,items)])
+
+# np.flip
+# The numpy.flip() function reverses the order of array elements along the specified axis, preserving the shape of the array.
+
+print(np.flip(a))
+
+print(np.flip(b,axis=1))
+
+# np.put its permanantly change
+# The numpy.put() function replaces specific elements of an array with given values of p_array. Array indexed works on flattened array.
+print(a) 
+print(np.put(a,[0,1],[110,530])) 
+
+# np.delete
+# The numpy.delete() function returns a new array with the deletion of sub-arrays along with the mentioned axis.
+print(a)
+print(np.delete(a,[0,2,4])) #delete its from this index 0,2,4
+
+# Set functions
+# np.union1d
+m = np.array([1,2,3,4,5])
+n = np.array([3,4,5,6,7])
+
+print(np.union1d(m,n))
+
+
+# np.intersect1d
+print(np.intersect1d(m,n))
+
+# np.setdiff1d
+print(np.setdiff1d(n,m))
+
+# np.setxor1d
+print(np.setxor1d(m,n))
+
+
+# np.in1d
+print(m[np.isin(m,1)])
+
+# np.clip
+# numpy.clip() function is used to Clip (limit) the values in an array.
+print(a)
+print(np.clip(a,a_min=25,a_max=75))
